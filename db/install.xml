@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/remote_content/db" VERSION="20170207" COMMENT="XMLDB file for Moodle blocks/remote_content"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_remote_content" COMMENT="Registers shared definitions fot content sources">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" ENUM="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" DEFAULT="0" ENUM="false"/>
+        <FIELD NAME="type" TYPE="char" LENGTH="15" NOTNULL="true" SEQUENCE="false" DEFAULT="rest" ENUM="false"/>
+        <FIELD NAME="authtype" TYPE="char" LENGTH="15" NOTNULL="true" SEQUENCE="false" DEFAULT="sitetoken" ENUM="false"/>
+        <FIELD NAME="authtoken" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+        <FIELD NAME="cacheable" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" DEFAULT="0" ENUM="false"/>
+        <FIELD NAME="capability" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+        <FIELD NAME="baseuri" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+        <FIELD NAME="queryparams" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+        <FIELD NAME="localcss" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+        <FIELD NAME="remotecssuri" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+        <FIELD NAME="mustachetemplate" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+        <FIELD NAME="soapwsdluri" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+        <FIELD NAME="soapcall" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+        <FIELD NAME="soapparams" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" ENUM="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
