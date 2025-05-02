@@ -74,7 +74,7 @@ class boardz_crypto extends default_crypto {
 
             // Iterate through each character
             for ($i = 0; $i < strlen($str); $i++) {
-                    $encrypted .= $str{$i} ^ $key{$i};
+                    $encrypted .= $str[$i] ^ $key[$i];
             }
         } else if ($method == 'rsa') {
             // RSA algorithm. Robust. Dependency to openssl.
