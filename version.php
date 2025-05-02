@@ -24,15 +24,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2017020701;        // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2018112800;        // Requires this Moodle version.
+$plugin->version   = 2025050100;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2019111200;        // Requires this Moodle version.
 $plugin->component = 'block_remote_content';      // Full name of the plugin (used for diagnostics).
 $plugin->maturity = MATURITY_ALPHA;
-$plugin->release = '3.6.0 (build 2017020701)';
-
-// Advanced attributes
-$plugin->supports = [36,36];
-$plugin->incompatible = 37;
+$plugin->release = '4.5.0 (build 2025050100)';
 
 // Non Moodle attributes.
-$plugin->codeincrement = '3.6.0000';
+$plugin->codeincrement = '4.5.0000';

@@ -89,3 +89,4 @@ $string['frompattern'] = 'Capture start pattern';
 $string['topattern'] = 'Capture end pattern';
 
 $string['erroremptyresturl'] = 'Protocol is REST, but rest url is empty.';
+$string['contentnotavailable'] = 'Content is not available for some reason (misconfiguration, remote side unavailable)';

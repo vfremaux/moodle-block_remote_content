@@ -30,7 +30,7 @@ $string['configallowadditionalcssclasses'] = 'Adds a configuration option to HTM
 $string['configclasses'] = 'Additional CSS classes';
 $string['configclasses_help'] = 'The purpose of this configuration is to aid with theming by helping distinguish HTML blocks from each other. Any CSS classes entered here (space delimited) will be appended to the block\'s default classes.';
 $string['configtitle'] = 'Titre du bloc';
-$string['configpreferedcrypto'] = 'Algorythme de cryptographie (contexte)';
+$string['configpreferedcrypto'] = 'Algorithme de cryptographie (contexte)';
 $string['internal'] = 'Interne';
 $string['rsa'] = 'RSA (par le réseau moodle)';
 $string['aes'] = 'AES (par Mysql)';
@@ -87,3 +87,4 @@ $string['frompattern'] = 'Motif de début de capture';
 $string['topattern'] = 'Motif de fin de capture';
 
 $string['erroremptyresturl'] = 'Le protocole est REST, maus l\'URL rest est vide.';
+$string['contentnotavailable'] = 'Le contenu n\'est pas disponible (erreur de configuration, distant non disponible)';

@@ -26,9 +26,10 @@
  * @copyright 1999 onwards Valery Fremaux (https://www.activeprolearn.com)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+namespace block_remote_content\crypto;
+
 defined('MOODLE_INTERNAL') || die();
 
-namespace \block_remote_content\crypto;
 require_once($CFG->dirroot.'/blocks/remote_content/classes/crypto/default.class.php');
 
 /**
